@@ -69,7 +69,7 @@ export default function App() {
 
   return (
     <div className='gradient-custom-5 '>
-      <BrowserRouter>
+      <BrowserRouter basename={process.env.PUBLIC_URL}>
         <Routes>
           <Route path="/" element={<Header />}>
             <Route index element={<Home events={events} categories={categories} setEvents={setEvents} setCategories={setCategories}/>} />
